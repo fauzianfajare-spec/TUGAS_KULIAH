@@ -1,0 +1,104 @@
+body {
+    background-color: #98FB98; 
+}
+
+#header {
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+}
+
+#wrapper {
+    width: 600px; 
+    margin: auto;
+}
+
+#menu ul {
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+#menu ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+#menu ul li ul {
+    display: none; 
+    position: absolute; 
+}
+
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffffff;
+    padding: 5px 15px 5px 15px;
+    background: #444444; 
+    border-right: 1px solid #666666;
+    white-space: nowrap;
+}
+
+#menu ul li a:hover {
+    background: #00FF00;
+}
+
+#menu li:hover ul {
+    display: block;
+    position: absolute;
+    z-index: 1000; 
+}
+
+#menu li:hover ul li {
+    float: none;
+    font-size: 11px;
+    border-bottom: 1px solid #555;
+    border-right: none;
+}
+
+#menu li:hover ul li a {
+    background: #3b3b3b;
+    padding: 5px 10px;
+    font-weight: normal;
+    width: 150px; 
+}
+
+#menu li:hover ul li a:hover {
+    background: #00FF00; 
+}
+
+.content {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left; 
+    margin-right: 20px;
+    border: 3px solid #666666;
+}
+
+.biodata-list {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.biodata-list strong {
+    display: inline-block;
+    width: 120px;
+}
