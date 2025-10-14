@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pengulangan for</title>
+  <script>
+    function tampilkanTulisan() {
+      let jumlah = parseInt(prompt("Masukkan jumlah pengulangan:"));
+      let teks = "";
+
+      for (let i = 1; i <= jumlah; i++) {
+        teks += "Ini adalah pengulangan ke-" + i + "<br>";
+      }
+
+      document.getElementById("hasil").innerHTML = teks;
+    }
+  </script>
+</head>
+<body onload="tampilkanTulisan()">
+  <h2>Hasil Pengulangan</h2>
+  <div id="hasil"></div>
+</body>
+</html>

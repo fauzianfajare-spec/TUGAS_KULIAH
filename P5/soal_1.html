@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Seleksi Nilai</title>
+  <script>
+    function cekNilai() {
+      let nilai = parseInt(prompt("Masukkan nilai Anda (0–100):"));
+      let huruf, keterangan;
+
+      if (nilai >= 80 && nilai <= 100) {
+        huruf = "A";
+        keterangan = "Lulus";
+      } else if (nilai >= 75) {
+        huruf = "AB";
+        keterangan = "Lulus";
+      } else if (nilai >= 70) {
+        huruf = "B";
+        keterangan = "Lulus";
+      } else if (nilai >= 65) {
+        huruf = "BC";
+        keterangan = "Lulus";
+      } else if (nilai >= 60) {
+        huruf = "C";
+        keterangan = "Lulus";
+      } else if (nilai >= 50) {
+        huruf = "D";
+        keterangan = "Tidak Lulus";
+      } else if (nilai >= 0) {
+        huruf = "E";
+        keterangan = "Tidak Lulus";
+      } else {
+        alert("Nilai tidak valid!");
+        return;
+      }
+
+      document.getElementById("hasil").innerHTML =
+        "Nilai Anda: " + nilai + "<br>" +
+        "Huruf: " + huruf + "<br>" +
+        "Keterangan: " + keterangan;
+    }
+  </script>
+</head>
+<body onload="cekNilai()">
+  <h2>Hasil Seleksi Nilai</h2>
+  <div id="hasil"></div>
+</body>
+</html>
