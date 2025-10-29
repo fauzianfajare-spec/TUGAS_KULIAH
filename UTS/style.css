@@ -1,0 +1,21 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.table th {
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: #646a73;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
